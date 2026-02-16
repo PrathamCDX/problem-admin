@@ -42,7 +42,18 @@ const questionBreakdownSchema = new Schema<QuestionBreakdown>({
     marksTotal: {
         type: Number,
         required: true
-    }
+    },
+
+    options: {
+        type: [String],
+        required: true,
+    },
+
+    problemStatement: {
+        type: String,
+        required: true
+    },
+
 }, { _id: false });
 
 const sectionBreakDownSchema = new Schema<SectionBreakdown>({

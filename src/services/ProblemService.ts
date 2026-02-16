@@ -83,7 +83,9 @@ class ProblemService {
                         correctOption: question.correctOption!,
                         userAnswer,
                         marksAwarded,
-                        marksTotal: question.marks
+                        marksTotal: question.marks,
+                        options: question.options,
+                        problemStatement: question.problemStatement
                     });
                 }
             }

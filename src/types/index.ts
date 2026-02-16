@@ -38,6 +38,8 @@ export interface QuestionBreakdown {
     questionTitle: string
     isCorrect: boolean
     correctOption: string
+    options: string[]
+    problemStatement: string
     userAnswer: string | null
     marksAwarded: number
     marksTotal: number
